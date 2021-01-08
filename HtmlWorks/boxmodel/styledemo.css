@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+}
+table{
+    margin-left: 25%;
+}
+td{
+    width:120px;
+    height:200px;
+    border-color: aliceblue;
+    border-style: solid;
+} 
+
+#one{
+    background-color:aqua;
+}
+
+#two{
+    background-color: blue;
+}
+
+#three{
+    background-color:blueviolet
+}
+#four{
+    background-color: crimson;
+}
+
+#five{
+    background-color: darkolivegreen;
+}

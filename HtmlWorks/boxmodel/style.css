@@ -1,0 +1,27 @@
+ h1{
+    font-family: 'Sansita Swashed', cursive;
+}
+ 
+
+#top{
+    width:50%;
+    color:red;
+    border-style: dotted;
+    border-color: black;
+    margin-left: 20%;
+    padding-left:25px;
+    margin-top:20%;
+}
+
+
+#bottom{
+    width:50%;
+    color: green;
+    border-style: dotted;
+    border-color: blueviolet;
+    margin-top: 30%;
+    margin-left:20%;
+    padding-left:25px;
+
+}
+

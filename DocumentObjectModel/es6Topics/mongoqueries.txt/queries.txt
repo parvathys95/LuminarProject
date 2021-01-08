@@ -1,0 +1,103 @@
+
+
+//for listing all db
+
+> show dbs
+
+
+// for creating a new database\
+
+use luminar;
+
+
+intead of table here we say collections
+
+>>db.createCollection("collectioname)
+
+// for listing all collections
+>show collections;
+
+// to isert values
+
+//studentname, course, age, total , inmysql we use record here we use the term 'document'
+
+
+// db.college.insert({studentname:"ajay",course:"bca",age:18,total:145})
+
+
+
+//for inserting morethan 1 document use insetMAny fn.. pass objects as array 
+
+//db.college.insertMany([{studentname:"danie",course:"mca",age:18,total:130},{studentname:"achu",course:"bca",age:19,total:150}])
+
+// fetching all documents
+//db.college.find()
+
+//db.college.find().pretty()>>> to style the output data
+
+// we can add extra docment also.. in mongo no need of unique doument.. to add adress we can insert that tooo
+
+
+
+//sorting according with total
+>db.college.find().sort({total:-1}).pretty() //ascending order
+
+db.college.find().sort({total:1}).pretty()
+
+// to find student with bca
+//db.college.find({course:"bca"})
+
+
+//fetching all records except mca
+//db.college.find({course:{$ne:'mca'}}).pretty()  //$ne is not equal to mca
+
+
+
+// fetching all documents whot have total<150 
+
+db.college.find({total:{$lt:150}}).pretty() //$lt less than
+db.college.find({total:{$lte:150}}).pretty() //$lt less than or equal to
+
+
+//counting number of records
+>db.college.find().count()
+
+//counting number od students as bca
+
+db.college.find({course"'bca'}).count()
+
+
+//// students not doing bca
+
+db.college.find({course:{$ne:'bca'}})
+
+//count
+db.college.find({course:{$ne:'bca'}}).count()
+
+
+
+//
+
+>db.college.find().forEach(obj=>print(obj.studentname))
+
+// to update 
+db.college.update({studentname:'achu'},{$set:{total:180}})
+db.college.update({studentname:'tom'},{$set:{total:180}})
+
+to find only achu document
+//db.college.find({studentname:'achu'})
+
+
+//create a new database sbk
+create collection names as
+
+db.bank.insert({pname:"test1",acno:1000,age:45,actype:'savings'}, {pname:"test2",acno:2000,age:48,actype:'savings'}, {pname:"test3",acno:1001,age:55,actype:'savings'}, {pname:"test4",acno:5000,age:65,actype:'current'})
+
+
+
+find al details whose acc tyoe not equal to savings
+count num of documents whose balance s greater than 5000
+count num of documents whose balance s less than 5000
+update test1 document with balnance 15000
+
+

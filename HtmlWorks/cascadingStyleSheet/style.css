@@ -1,0 +1,30 @@
+h1{
+    color:red
+}
+
+body{
+    background-color: rgb(240, 233, 105);
+}
+h2{
+    color:#7e3c8c
+}
+
+#one{
+    color:green
+}
+#second{
+    border-style: dotted;
+    border-color: blue;
+    color:green;
+}
+.third{
+    background-color: cadetblue;
+    border-style: dotted;
+    border-color: indianred;
+}
+.lione{
+    color:black;
+}
+li{
+    color: red;
+}
